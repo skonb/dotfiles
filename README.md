@@ -1,2 +1,2 @@
-# vimrc
-私用のvimrcを複数環境で共有するためのレポジトリ
+# dotfiles
+私用のvimrcやbash_profileを複数環境で共有するためのレポジトリ
