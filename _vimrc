@@ -31,7 +31,6 @@ set backspace=indent,eol,start
 
 call plug#begin('~/.vim/plugged')
   "PowerLine 
-  Plug 'vim-airline/vim-airline' 
   Plug'vim-airline/vim-airline-themes'
 call plug#end()
 
