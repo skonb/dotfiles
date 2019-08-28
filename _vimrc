@@ -3,9 +3,6 @@ set noundofile
 
 set number
 
-"with neovim
-colorscheme kalisi
-
 "use 4 space tab
 set expandtab 
 set tabstop=4 
@@ -32,6 +29,7 @@ set backspace=indent,eol,start
 call plug#begin('~/.vim/plugged')
   "PowerLine 
   Plug'vim-airline/vim-airline-themes'
+  Plug 'freeo/vim-kalisi'
 call plug#end()
 
 "keymap
@@ -39,3 +37,6 @@ call plug#end()
 set hlsearch 
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
+"colorscheme
+colorscheme kalisi
+set background=dark
