@@ -35,6 +35,28 @@ alias ks='echo "bash > おお？なんだァ？ksだとぉ？許さねえから�
 #use /usr/local/bin/vim
 export PATH=/usr/local/bin:$PATH
 
-#nodeenv
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
+#use pyenv
+export PYENV_ROOT="/usr/local/var/pyenv"
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+#change terminal's first sentence 
+PS1="\t \w > "
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT=/Users/neko/Downloads/cocos2d-x-3.17.2/tools/cocos2d-console/bin
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_X_ROOT for cocos2d-x
+export COCOS_X_ROOT=/Users/neko/Downloads
+export PATH=$COCOS_X_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+export COCOS_TEMPLATES_ROOT=/Users/neko/Downloads/cocos2d-x-3.17.2/templates
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+#alias from default vim to brew vim
+alias vim="/usr/local/bin/vim"
+
+#alias C compiler
+alias c="gcc"
