@@ -8,4 +8,5 @@ ln -sf ~/dotfiles/_vimrc ~/_vimrc
 #ターミナル起動時に自動実行されるshellスクリプト
 ln -sf ~/dotfiles/moveGif.sh  ~/.moveGif.sh
 ln -sf ~/dotfiles/moveScreenshot.sh  ~/.moveScreenshot.sh
+ln -sf ~/dotfiles/moveMd.sh  ~/.moveMd.sh
 
