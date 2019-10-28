@@ -5,11 +5,7 @@ export PATH=$PATH:/Applications/SWI-Prolog.app/Contents/MacOS/
 if [ -f ~/.bashrc ]; then
 . ~/.bashrc
 fi
-# ~/.pyenvではなく、/usr/loca/var/pyenvを使う
-export PYENV_ROOT=/usr/local/var/pyenv
 
-# pyenvの自動補完機能を利用
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # (Advanced): Change this to the name of your remote repo if you
 # cloned bash-it with a remote other than origin such as `bash-it`.
@@ -44,15 +40,15 @@ if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -
 PS1="\t \w > "
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Users/neko/Downloads/cocos2d-x-3.17.2/tools/cocos2d-console/bin
+export COCOS_CONSOLE_ROOT=/Users/neko/Downloads/CubismSdkForNative-4-beta.1/Samples/Cocos2d-x/cocos2d/tools/cocos2d-console/bin
 export PATH=$COCOS_CONSOLE_ROOT:$PATH
 
 # Add environment variable COCOS_X_ROOT for cocos2d-x
-export COCOS_X_ROOT=/Users/neko/Downloads
+export COCOS_X_ROOT=/Users/neko/Downloads/CubismSdkForNative-4-beta.1/Samples/Cocos2d-x
 export PATH=$COCOS_X_ROOT:$PATH
 
 # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT=/Users/neko/Downloads/cocos2d-x-3.17.2/templates
+export COCOS_TEMPLATES_ROOT=/Users/neko/Downloads/CubismSdkForNative-4-beta.1/Samples/Cocos2d-x/cocos2d/templates
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
 #alias from default vim to brew vim
@@ -60,3 +56,10 @@ alias vim="/usr/local/bin/vim"
 
 #alias C compiler
 alias c="gcc"
+
+#make path to ADB
+export PATH=$PATH:/Users/neko/Library/Android/sdk/platform-tools
+
+#settings for pyenv
+export CFLAGS="-I/usr/local/Cellar/openssl/1.0.2s/include"
+export LDFLAGS="-L/usr/local/Cellar/openssl/1.0.2s/lib"
