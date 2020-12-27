@@ -5,7 +5,8 @@ set number
 
 "use 4 space tab
 set expandtab 
-set tabstop=4 
+set tabstop=2 
+set shiftwidth=2
 set smartindent
 
 "enable mouse 
